@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.crianca {
+    background-image: url('Crianca.gif');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    bottom: 0;
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    margin-bottom: 10px;
+    transform: translate(0.1);
+}
+
+.fruta {
+    top: 0;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 60px;
+}
+
+.armadilha {
+    background-image: url('CachorroMorto.png');
+    top: 0;
+    position: absolute;
+    width: 100px;
+    height: 45px;
+}
+
+.pontos {
+    font-family: "Tiny5", sans-serif;
+    font-style: normal;
+    font-size: 2vw;
+    height: 3vh;
+    padding-left: 87vw;
+    padding-bottom: 90vh;
+    position: absolute;
+    justify-content: right;
+    color: aliceblue;
+  }
+
+.fase {
+    font-family: "Tiny5", sans-serif;
+    font-style: normal;
+    font-size: 2vw;
+    height: 3vh;
+    padding-right: 87vw;
+    padding-bottom: 90vh;
+    position: absolute;
+    justify-content: right;
+    color: aliceblue;
+}
+
+.amazing {
+    z-index: 1000;
+    opacity: 0.80;
+    width: 726;
+    height: 150;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    animation: animacao 1s infinite ease-in-out;
+}
+
+
+@keyframes animacao {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-7deg);
+    }
+    40% {
+        transform: rotate(-14deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(14deg);
+    }
+    100% {
+        transform: rotate(7deg);
+    }
+}
